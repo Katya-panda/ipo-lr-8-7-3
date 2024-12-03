@@ -1,7 +1,7 @@
 import json
 # загружаем данные из файла (если файл существует)
 try:
-    with open('data.json', 'r') as file:
+    with open('data.json', 'r', encoding = "utf-8") as file:
         data = json.load(file)
 except FileNotFoundError:
     data = []
